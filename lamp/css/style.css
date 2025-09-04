@@ -88,7 +88,7 @@ h4 {
   display: flex;
   align-items: center; /* Pusatkan vertikal */
   justify-content: flex-start; /* Pusatkan horizontal */
-  text-align: flex-start; /* Untuk teks yang multi-line, tetap tengah */
+  text-align: left; /* Untuk teks yang multi-line, tetap tengah */
   color: #2c2c2c;
   line-height: 1.4;
   border: none;
@@ -171,3 +171,4 @@ footer {
   .document-viewer { height: 60vh; }
 
 }
+
