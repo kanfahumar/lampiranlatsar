@@ -88,13 +88,15 @@ h4 {
   display: flex;
   align-items: center; /* Pusatkan vertikal */
   justify-content: flex-start; /* Pusatkan horizontal */
-  text-align: center; /* Untuk teks yang multi-line, tetap tengah */
+  text-align: left; /* Untuk teks yang multi-line, tetap tengah */
   color: #2c2c2c;
   line-height: 1.4;
   border: none;
   width: 100%;
 }
-
+.btn-linktree span {
+  flex-grow: 1; /* biar teks ambil ruang dan tetap kiri */
+}
 .btn-linktree i {
   font-size: 22px;
   margin-right: 12px;
@@ -169,4 +171,5 @@ footer {
   .btn-linktree, .btn-back { font-size: 0.9rem; padding: 10px 14px; }
   .main-card { padding: 25px 15px; }
   .document-viewer { height: 60vh; }
+
 }
