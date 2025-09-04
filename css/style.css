@@ -1,0 +1,172 @@
+/* ===== Global Style ===== */
+body {
+  background: linear-gradient(135deg, #2c3e50, #1a1a1a);
+  font-family: "Segoe UI", sans-serif;
+  color: #2c2c2c;
+  margin: 0;
+  min-height: 100vh;
+}
+
+/* Background image if exists */
+body.has-bg {
+  background: url("../assets/bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.35);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* ===== Glass Card ===== */
+.main-card {
+  background: rgba(255, 249, 230, 0.12);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 230, 170, 0.35);
+  border-radius: 22px;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.25);
+  padding: 35px 25px;
+  max-width: 650px;
+  width: 100%;
+  text-align: center;
+}
+
+/* ===== Logo ===== */
+.logo {
+  width: 100px;
+  margin: 10px auto 25px auto;
+  display: block;
+  transition: all 0.4s ease;
+}
+
+.logo:hover {
+  transform: scale(1.15) rotate(3deg);
+}
+
+/* ===== Heading ===== */
+h5 {
+  color: #fefdfd;
+  font-weight: 500;
+}
+
+h4 {
+  color: #f9f5f5;
+  font-weight: 700;
+  margin-bottom: 28px;
+}
+/* Judul Dokumen */
+.docTitle {
+  color: #f9f5f5;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 1.4rem;
+  padding: 0 15px;
+}
+
+/* ===== Buttons ===== */
+.links-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.btn-linktree {
+  background: linear-gradient(135deg, #FFF6B3, #FFE57F);
+  border-radius: 14px;
+  padding: 12px 18px;
+  font-weight: 500;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: flex;
+  align-items: center; /* Pusatkan vertikal */
+  justify-content: flex-start; /* Pusatkan horizontal */
+  text-align: center; /* Untuk teks yang multi-line, tetap tengah */
+  color: #2c2c2c;
+  line-height: 1.4;
+  border: none;
+  width: 100%;
+}
+
+.btn-linktree i {
+  font-size: 22px;
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+
+.btn-linktree:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 0 16px rgba(255, 229, 127, 0.6);
+  text-decoration: none;
+  color: #2c2c2c;
+}
+
+/* Back Button */
+.back-button-container {
+  margin: 25px 0 15px 0;
+}
+
+.btn-back {
+  background: linear-gradient(135deg, #FFE57F, #FFD54F);
+  border-radius: 14px;
+  padding: 12px 18px;
+  font-weight: 500;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  color: #2c2c2c;
+  line-height: 1.4;
+  border: none;
+}
+
+.btn-back i {
+  margin-right: 8px;
+}
+
+.btn-back:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 16px rgba(255, 213, 79, 0.6);
+  text-decoration: none;
+  color: #2c2c2c;
+}
+
+/* Document Viewer */
+.document-viewer {
+  width: 100%;
+  height: 70vh;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+#doc-frame {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* ===== Footer ===== */
+footer {
+  margin-top: 35px;
+  font-size: 14px;
+  color: #eee;
+}
+
+/* ===== Responsiveness ===== */
+@media (max-width: 576px) {
+  .logo { width: 80px; }
+  h4 { font-size: 1.1rem; }
+  .btn-linktree, .btn-back { font-size: 0.9rem; padding: 10px 14px; }
+  .main-card { padding: 25px 15px; }
+  .document-viewer { height: 60vh; }
+}
